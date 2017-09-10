@@ -1,0 +1,38 @@
+.b-posts-2{
+	padding: 4em 0;
+}
+
+	.b-posts-2__list{
+		list-style: none;
+	}
+
+		.b-posts-2__item{
+			display: inline-block;
+			vertical-align: top;
+			width: 26%;
+			padding: 1% 2% 2% 2%;
+			margin: 0 0 3% 3%;
+			
+			&:first-child,
+			&:nth-child(3n+4){
+				margin: 0 0 3% 0;
+			}
+		}
+
+		.b-posts-2__head{
+			color: #3a3a3a;
+			font-size: 1.125em;
+			text-transform: uppercase;
+		}
+
+		.b-posts-2__link{
+			color: #3a3a3a;
+			text-transform: uppercase;
+			text-decoration: none;
+			@include transition($time);
+
+			&:hover{
+				color: $base-blue-color;
+				@include transition($time);
+			}
+		}

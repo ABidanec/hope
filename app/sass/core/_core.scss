@@ -1,0 +1,94 @@
+@import "var_core";
+
+.clearfix{
+	&:before,
+	&:after{
+		content: "";
+		display: table;
+	}
+
+	&:after{
+		clear: both;
+	}
+}
+
+.l-center{
+	width: 95%;
+	margin: 0 auto;
+}
+
+
+body{
+	font-family: $base-font, sans-serif;
+	font-size: $base-font-s;
+	color: $base-font-c;
+}
+
+html, body{
+	height: 100%;
+}
+
+p{
+	margin: 0 0 1em 0;
+	line-height: 1.4em;
+}
+
+.l-wrapper{
+	position: relative;
+	min-height: 100%;
+	height: auto !important;
+	overflow: hidden;
+
+	&:after{
+		position: static;
+		content: " ";
+		display: block;
+		height: $footer-h;
+		z-index:1
+	}
+}
+
+.b-footer{
+	position: relative;
+	height: $footer-h;
+	margin: -$footer-h 0 0 0;
+	zoom: 1;
+	z-index: 100;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+}
+
+input, textarea{
+	outline: none;
+}
+
+a{
+	color: $a-c;
+	@include transition($time);
+
+	&:hover{
+		color: $a-c_h;
+		@include transition($time);
+	}
+}
+
+h1,h2,h3,h4,h5,h6{
+	color: #3a3a3a;
+}
+
+.b-btn{
+	display: block;
+	float: left;
+	padding: 1em 2em;;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+
+	&:hover{
+		color: #fff;
+	}
+}

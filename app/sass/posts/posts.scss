@@ -1,0 +1,40 @@
+.b-posts{
+	padding: 3em 0;
+}
+	.b-posts__list{
+		list-style: none;
+	}
+		.b-posts__item{
+			display: inline-block;
+			vertical-align: top;
+			width: 26%;
+			margin: 0 0 3% 3%;
+			padding: 0 2%;
+			
+			&:first-child,
+			&:nth-child(3n+4){
+				margin: 0;
+			}
+		}
+
+			.b-posts__head{
+				color: $base-blue-color;
+				font-size: 1.5em;
+				font-weight: 100;
+			}
+			
+			.b-posts__img{
+				width: 100%;
+			}
+
+			.b-posts__desc{
+				margin: 0 0 2em 0;
+			}
+
+			.b-posts__link{
+				background: $base-blue-color;
+
+				&:hover{
+					background: $base-green-color;
+				}
+			}

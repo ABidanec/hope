@@ -1,0 +1,99 @@
+.b-object{
+	padding: 4em 0;
+}
+
+	.b-object__list{
+		list-style: none;
+	}
+
+		.b-object__item{
+			float: left;
+			width: 35%;
+			margin: 0 0 3% 0;
+		}
+
+		.b-object__item_left{
+			padding: 2% 12% 2% 2%;
+		}
+
+		.b-object__item_right{
+			padding: 2% 2% 2% 12%;
+		}
+
+		.b-object__item_orange{
+			background: url("../../img/objects/bg-object-orange.png") no-repeat 96% 49%;
+
+			.b-object__head,
+			.b-object__link{
+				color: #ff7248;
+				@include transition($time);
+			}
+
+			.b-object__link:hover{
+				color: #C85A38;
+				@include transition($time);
+			}
+		}
+
+		.b-object__item_green{
+			background: url("../../img/objects/bg-object-green.png") no-repeat 96% 49%;
+
+			.b-object__head,
+			.b-object__link{
+				color: #71d759;
+				@include transition($time);
+			}
+
+			.b-object__link:hover{
+				color: #55A344;
+				@include transition($time);
+			}
+		}
+
+		.b-object__item_yellow{
+			background: url("../../img/objects/bg-object-yellow.png") no-repeat 2% 49%;
+
+			.b-object__head,
+			.b-object__link{
+				color: #f8b62b;
+				@include transition($time);
+			}
+
+			.b-object__link:hover{
+				color: #B3841F;
+				@include transition($time);
+			}
+		}
+
+		.b-object__item_blue{
+			background: url("../../img/objects/bg-object-blue.png") no-repeat 2% 49%;
+
+			.b-object__head,
+			.b-object__link{
+				color: #51d3a5;
+				@include transition($time);
+			}
+
+			.b-object__link:hover{
+				color: #3A9877;
+				@include transition($time);
+			}
+		}
+
+			.b-object__head{
+				font-size: 2.25em;
+				font-weight: 400;
+			}
+			
+			.b-object__desc{
+				p{
+					line-height: 1.4em;
+				}
+			}
+
+			.b-object__link{
+				float: left;
+				font-weight: 700;
+				text-transform: uppercase;
+				text-decoration: none;
+			}

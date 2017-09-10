@@ -1,0 +1,122 @@
+@import "var_header";
+
+.b-header{
+	background: $b-header-bg;
+	min-height: $b-header-h;
+	border-top: 1px solid #fff;
+}
+	.b-logo{
+		float: left;
+	}
+		.b-logo__link{
+			display: block;
+			padding: $b-logo__link-pt 0;
+			font-size: $b-logo__link-s;
+			font-weight: 700;
+			color: $b-logo__link-c;
+			text-decoration: none;
+			text-transform: uppercase;
+			@include transition($time);
+
+			&:hover{
+				color: $b-logo__link-c_h;
+				@include transition($time);
+			}
+		}
+
+	.b-top-menu{
+		float: right;
+	}
+		.b-top-menu__list{
+			list-style: none;
+		}
+			.b-top-menu__item{
+				position: relative;
+				float: left;
+				margin: 0 $b-top-menu__item;
+			}
+
+				.b-top-menu__link{
+					display: block;
+					padding: $b-top-menu__link-pt 0;
+					font-size: $b-top-menu__link-s;
+					font-weight: 700;
+					text-transform: uppercase;
+					text-decoration: none;
+					color: $b-top-menu__link-c;
+					@include transition($time);
+
+					&:hover{
+						color: $b-top-menu__link-c_h;
+						@include transition($time);
+					}
+				}
+
+				.b-top-menu__item_active{
+					.b-top-menu__link{
+						color: $b-top-menu__link-c_a;
+						@include transition($time);
+
+						&:hover{
+							color: $b-top-menu__link-c_h;
+							@include transition($time);
+						}
+					}
+				}
+
+			.b-top-submenu__list{
+				visibility: hidden;
+				opacity: 0;
+				@include transition($time);
+				position: absolute;
+				left: 0;
+				padding: 1em 0 0 0;
+				list-style: none;
+				z-index: 100;
+				
+				.b-top-submenu__list{
+					position: absolute;
+					padding: 0 0 0 1em;
+					left: 100%;
+					top: 1%;
+				}
+
+			}
+
+				.b-top-submenu__link{
+					display: block;
+					padding: 1em;
+					text-decoration: none;
+					background: $b-top-submenu__link-bg;
+					color: $b-top-submenu__link-c;
+					text-transform: uppercase;
+					border-top: 1px solid #fff;
+					border-bottom: 1px solid #fff;
+					@include transition($time);
+
+					&:hover{
+						color: $b-top-submenu__link-c;
+						background: $b-top-submenu__link-bg_h;
+						@include transition($time);
+					}
+				}
+
+
+				.b-top-menu__item{
+
+					&:hover > .b-top-submenu__list{
+						visibility: visible;
+						opacity: 1;
+						@include transition($time);
+					}
+				}
+
+				.b-top-submenu__item{
+					position: relative;
+
+					&:hover > .b-top-submenu__list{
+						visibility: visible;
+						opacity: 1;
+						@include transition($time);
+					}
+				}

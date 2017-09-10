@@ -1,0 +1,38 @@
+.b-staff{
+	padding: 2em 0;
+	background: url("../../img/bg_staff.jpg") no-repeat top center;
+	background-size: cover;
+	color: #fff;
+}
+
+.b-staff__header{
+	padding: 0 2%;
+}
+
+	.b-staff__list{
+		list-style: none;
+	}
+		.b-staff__item{
+			display: inline-block;
+			vertical-align: top;
+			width: 19%;
+			padding: 2%;
+			margin: 0 0 2% 2%;
+
+			&:first-child,
+			&:nth-child(4n+5){
+				margin: 0 0 2% 0;
+			}
+		}
+			.b-staff__img{
+				width: 100%;
+			}
+
+			.b-staff__link{
+				@extend .b-posts-2__link;
+				color: #fff;
+
+				&:hover{
+					color: #cfcfcf;
+				}
+			}

@@ -1,0 +1,81 @@
+.b-address,
+.b-contact-form{
+	padding: 2em 0;
+}
+
+	.b-address__head{
+		@extend .b-posts-2__head;
+	}
+
+	.b-address__list{
+		list-style: none;
+	}
+		.b-address__item{
+			position: relative;
+			display: inline-block;
+			vertical-align: top;
+			width: 11%;
+			padding: 1% 1% 1% 5%;
+			margin: 0 0 2% 2%;
+
+			&:first-child{
+				margin: 0 0 2% 0;
+			}
+
+			p{
+				margin: 0;
+			}
+
+			.fa{
+				position: absolute;
+				left: 0;
+				top: -1%;
+				font-size: 3.5em;
+			}
+
+			.fa-home{
+				color: #ff7248;
+			}
+
+			.fa-phone{
+				color: #71d759;
+			}
+
+			.fa-envelope{
+				color: $base-blue-color;
+			}
+		}
+	.b-contact-form__head{
+		margin: 0 0 0 1%;
+		@extend .b-posts-2__head;
+	}
+
+	.b-contact-form__left,
+	.b-contact-form__right{
+		float: left;
+		width: 48%;
+		padding: 1%;
+	}
+		.b-contact-form__input,
+		.b-contact-form__textarea{
+			display: block;
+			width: 98%;
+			padding: 2% 1%;
+			margin: 0 0 2% 0;
+			@include border-radius(3px, 3px, 3px, 3px);
+			border: 1px solid #aaa;
+			color: #888;
+		}
+
+		.b-contact-form__send{
+			border: none;
+			float: right;
+			margin: 0 1% 0 0;
+			background: $base-blue-color;
+			@include transition($time);
+
+			&:hover{
+				background: $base-green-color;
+				@include transition($time);
+			}
+		}

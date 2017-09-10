@@ -1,0 +1,156 @@
+.b-soc,
+.b-footer-menu{
+	padding: 2em 0;
+}
+	
+
+	.b-soc{
+		position: relative;
+		overflow:hidden;
+	}
+
+	.b-soc__list{
+		list-style:none;
+		position: relative;
+		left:50%;
+		float: left;
+	}
+		.b-soc__item{
+			position:relative;
+			left:-50%;
+			float:left;
+			margin: 0 1em;
+			width: 5em;
+			height: 5em;
+			@include border-radius(50%, 50%, 50%, 50%);
+			overflow: hidden;
+		}
+
+			.b-soc__link{
+				position: relative;
+				display: block;
+				width: 100%;
+				height: 100%;
+				text-decoration: none;
+				color: #fff;
+				font-size: 2em;
+
+				&:hover{
+					color: #fff;
+				}
+
+				span{
+					position: absolute;
+					left: -99999px;
+				}
+
+				.fa{
+					position: absolute;
+				}
+			}
+
+			.b-soc__link_in{
+				background: #88D0FF;
+				@include transition($time);
+
+				&:hover{
+					background: #6CA4CA;
+					@include transition($time);
+				}
+
+				.fa{
+					top: 27%;
+    				left: 31%;
+				}
+			}
+
+			.b-soc__link_gp{
+				background: #FF8C8E;
+				@include transition($time);
+
+				&:hover{
+					background: #D07274;
+					@include transition($time);
+				}
+
+				.fa{
+					top: 28%;
+    				left: 26%;
+				}
+			}
+
+			.b-soc__link_fb{
+				background: #6984B7;
+				@include transition($time);
+
+				&:hover{
+					background: #546A93;
+					@include transition($time);
+				}
+
+				.fa{
+					top: 29%;
+    				left: 36%;
+				}
+			}
+
+			.b-soc__link_vk{
+				background: #507299;
+				@include transition($time);
+
+				&:hover{
+					background: #3F5A79;
+					@include transition($time);
+				}
+
+				.fa{
+					top: 27%;
+    				left: 25%;
+				}
+			}
+
+			.b-soc__link_rss{
+				background: #F5D070;
+				@include transition($time);
+
+				&:hover{
+					background: #C0A358;
+					@include transition($time);
+				}
+
+				.fa{
+					top: 28%;
+    				left: 36%;
+				}
+			}
+
+	.b-footer-menu{
+		@extend .b-soc;
+	}
+
+		.b-footer-menu__list{
+			@extend .b-soc__list;
+		}
+			.b-footer-menu__item{
+				position:relative;
+				left:-50%;
+				float:left;
+				margin: 0 1em;
+			}
+
+				.b-footer-menu__item_active{
+					
+					.b-footer-menu__link{
+						color: $base-blue-color;
+					}
+				}
+
+
+				.b-footer-menu__link{
+					@extend .b-top-menu__link;
+					color: #333;
+				}
+
+	.b-copyright{
+		text-align: center;
+	}		

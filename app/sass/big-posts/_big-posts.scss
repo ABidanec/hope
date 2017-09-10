@@ -1,0 +1,40 @@
+.b-big-posts{
+	padding: 4em 0;
+	background: url("../../img/bg_big_posts.jpg") no-repeat top center;
+	background-size: cover;
+}
+
+	.b-big-posts__content{
+		width: 40%;
+		color: #3e3d44;
+	}
+
+		.b-big-posts__head{
+			font-size: 4.5em;
+			margin: 0 0 0.5em 0;
+		}
+
+		.b-big-posts__intro{
+			font-size: 1.75em;
+			margin: 0 0 0.5em 0;
+		}
+
+		.b-big-posts__desc{
+			margin: 0 0 2em 0;
+
+			p{
+				line-height: 1.4em;
+				margin: 0 0 1em 0;
+			}
+		}
+
+		.b-big-posts__link{
+			float: left;
+			background: $base-red-color;
+			@include transition($time);
+
+			&:hover{
+				background: $base-blue-color;
+				@include transition($time);
+			}
+		}

@@ -1,0 +1,42 @@
+@import "var_company";
+
+.b-company{
+	background: $b-company-bg;
+	padding: $b-company-pt 0;
+}
+
+	.b-company__content{
+		font-size: $b-company__content-s;
+		font-weight: 700;
+		color: $b-company__content-c;
+		padding: 0 20% 0 0;
+	}
+	
+		.l-company__link{
+			float: right;
+			width: 6.8em;
+			height: 6.8em;			
+			@include border-radius(50%, 50%, 50%, 50%);
+			overflow: hidden;
+			margin: 0 15% 0 0;
+
+		}
+			.b-company__link{
+				display: block;
+				padding: 1.25em 0 0 0;
+				width: 100%;
+				height: 100%;
+				color: #fff;
+				background: $base-blue-color;
+				font-size: 1.4em;
+				font-weight: 700;
+				text-align: center;
+				text-decoration: none;
+				text-transform: uppercase;
+				z-index: 100;
+	
+				&:hover{
+					background: $base-red-color;
+					color: #fff;
+				}
+			}

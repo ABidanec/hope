@@ -1,0 +1,12 @@
+.b-posts {
+  padding: 3em 0; }
+
+.b-posts__list {
+  list-style: none; }
+
+.b-posts__item {
+  float: left;
+  width: 30%;
+  margin: 0 0 3% 3%; }
+  .b-posts__item:first-child, .b-posts__item:nth-child(3n+4) {
+    margin: 0; }

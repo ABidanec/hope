@@ -1,0 +1,73 @@
+.b-features{
+	padding: 2em 0;
+}
+	.b-features__list{
+		list-style: none;
+	}
+		.b-features__item{
+			display: inline-block;
+			vertical-align: top;
+			width: 26%;
+			padding: 2%;
+			margin: 0 0 1% 3%;
+
+			&:first-child,
+			&:nth-child(3n+4){
+				margin: 0 0 1% 0;
+			}
+		}
+			.b-features__head{
+				@extend .b-object__head;
+			}
+
+			.b-features__link{
+				@extend .b-object__link;
+			}
+
+		.b-features__item_red{
+			.b-features__head{
+				color: #ff7248;
+			}
+
+			.b-features__link{
+				color: #ff7248;
+				@include transition($time);
+
+				&:hover{
+					color: #C85A38;
+					@include transition($time);
+				}
+			}
+		}
+
+		.b-features__item_green{
+			.b-features__head{
+				color: #71d759;
+			}
+
+			.b-features__link{
+				color: #71d759;
+				@include transition($time);
+
+				&:hover{
+					color: #55A344;
+					@include transition($time);
+				}
+			}
+		}
+
+		.b-features__item_yellow{
+			.b-features__head{
+				color: #f8b62b;
+			}
+
+			.b-features__link{
+				color: #f8b62b;
+				@include transition($time);
+
+				&:hover{
+					color: #B3841F;
+					@include transition($time);
+				}
+			}
+		}
