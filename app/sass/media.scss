@@ -1,0 +1,223 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+}
+
+@media only screen and (max-width : 700px) {
+	.b-logo{
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+	/* menu */
+	.slicknav_menu{
+		display: block;
+	}
+
+	.b-top-menu{
+		display: none;
+	}
+		.b-top-menu__item{
+			float: none;
+			display: block;
+			text-align: center;
+		}
+		
+		.b-top-menu__link{
+			font-size: 1.4em;
+		}
+
+
+		.b-top-submenu__list,
+		.b-top-submenu__list .b-top-submenu__list{
+			position: static;
+			visibility: visible;
+			opacity: 1;
+			padding: 0;
+		}
+			.slicknav_nav a,
+			.slicknav_nav a:hover,
+			.slicknav_nav .slicknav_row:hover{
+				border: none;
+				background: none;
+
+			}
+
+			.b-top-submenu__link{
+				font-weight: 700;
+				font-size: 1.2em;
+			}
+	/* end menu */
+}
+
+
+@media only screen and (max-width : 600px) {
+	h1,h2,h3,h4,h5,h6{
+		text-align: center;
+	}
+
+	/* slider */
+	.b-slider__text{
+		width: 98%;
+		left: 1%;
+	}
+
+	/* end slider */
+
+	/* posts */
+	.b-posts__item{
+		width: 100%;
+		margin-left: 0;
+		padding: 0;
+	}
+		.b-posts__head{
+			text-align: center;
+		}
+	/* end posts */
+
+	/* objects */
+	.b-object__item{
+		@extend .b-posts__item;
+		background-position: top right;
+	}
+	/* end objects */
+
+	/* posts2 */
+	.b-posts-2__item{
+		@extend .b-posts__item;
+	}
+	/* end posts2 */
+
+	/* big-posts */
+	.b-big-posts__content{
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	/* end big-posts */
+
+	/* b-company */
+	.l-company__link{
+		margin-top: 10%;
+	}
+	/* end b-company */
+
+	/* donations page */
+	.b-article__head{
+		text-align: center;
+	}
+
+	.l-article__img{
+		width: 100%;
+		display: block;
+		margin: 0 0 1em 0;
+		padding: 0;
+	}
+	.l-article__desc{
+		padding: 0;
+	}
+
+	.b-donate__left{
+		float: none;
+		width: 100%;
+	}
+
+	.b-donate__right{
+		float: none;
+		width: 96%;
+		padding: 2%;
+		background-position: top right;
+	}
+
+	.b-sponsors__item{
+		float: none;
+		display: block;
+		width: 100%;
+		margin: 0 0 2%;
+	}
+	/* end donations page */
+
+	/* about page */
+	.b-features__item{
+		display: block;
+		width: 100%;
+		margin: 0 0 8% 0;
+		padding: 0;
+	}
+
+		.b-features__item:first-child, .b-features__item:nth-child(3n+4){
+			margin: 0 0 8% 0;
+		}
+
+		.b-features__head,
+		.b-staff__header{
+			text-align: center;
+		}
+		
+		.b-staff__item{
+			@extend .b-features__item;
+		}
+	/* end about page */
+
+	/* contact page */
+	.b-address__item{
+		display: block;
+		min-height: 3.5em;
+		float: none;
+		width: 100%;
+		padding: 0 0 0 10%;
+	}
+
+	.b-contact-form__head{
+		text-align: center;
+		margin: 0 0 5% 0;
+	}
+
+	.b-contact-form__left,
+	.b-contact-form__right,
+	.b-contact-form__send{
+		display: block;
+		float: left;
+		margin: 0 0 3% 0;
+		padding: 1em 0;
+		width: 100%;
+	}
+
+	/* end contact page */
+
+	/* inner page */
+	.b-img__right,
+	.b-img__left{
+		float: none;
+		margin: 0 0 3% 0;
+	}
+	/* end inner page */
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+@media only screen and (max-width : 240px) {
+
+}

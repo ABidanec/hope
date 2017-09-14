@@ -1,6 +1,7 @@
 $(document).ready(function(){
 	_moduleSlider.action();
 	_moduleToTop.action();
+	_moduleSlickMenu.action();
 });
 
 var _moduleSlider = (function(){
@@ -14,7 +15,15 @@ var _moduleSlider = (function(){
 				autoplaySpeed: 3000,
 				fade: true,
 				pauseOnHover: true,
-				adaptiveHeight: true
+				adaptiveHeight: true,
+				responsive: [
+					{
+				      breakpoint: 600,
+				      settings: {
+				        dots: false
+				      }
+				    }
+				]
 			});
 		}
 	}
@@ -39,6 +48,20 @@ var _moduleToTop = (function(){
 					{"scrollTop" : "0"},
 					delay
 				);
+			});
+		}
+	}
+})();
+
+var _moduleSlickMenu = (function(){
+	var _topMenu = $('.b-top-menu__list'),
+		_labelTopMenu = 'Меню';
+
+
+	return {
+		action: function(){
+			_topMenu.slicknav({
+				label: _labelTopMenu
 			});
 		}
 	}

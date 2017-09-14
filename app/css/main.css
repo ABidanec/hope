@@ -108,6 +108,7 @@ h1, h2, h3, h4, h5, h6 {
     -o-transition: 0.3s;
     transition: 0.3s; }
 
+/* menu */
 .b-top-menu {
   float: right; }
 
@@ -208,6 +209,18 @@ h1, h2, h3, h4, h5, h6 {
     -o-transition: 0.3s;
     transition: 0.3s; }
 
+/* end menu */
+/* slick menu*/
+.slicknav_menu {
+  display: none; }
+
+.slicknav_nav a:hover,
+.slicknav_nav .slicknav_row:hover {
+  background: none;
+  color: #aaa;
+  border-radius: 0; }
+
+/* end slick menu*/
 .b-slider {
   position: relative; }
 
@@ -923,11 +936,11 @@ h1, h2, h3, h4, h5, h6 {
   .b-inner img {
     width: 100%;
     margin: 0 0 1% 0; }
-  .b-inner .b-img_right {
+  .b-inner .b-img__right {
     float: right;
     width: 30%;
     margin: 0 0 1% 1%; }
-  .b-inner .b-img_left {
+  .b-inner .b-img__left {
     float: left;
     width: 30%;
     margin: 0 1% 1% 0; }

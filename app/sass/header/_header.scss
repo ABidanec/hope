@@ -23,7 +23,7 @@
 				@include transition($time);
 			}
 		}
-
+/* menu */
 	.b-top-menu{
 		float: right;
 	}
@@ -120,3 +120,17 @@
 						@include transition($time);
 					}
 				}
+/* end menu */
+
+/* slick menu*/
+.slicknav_menu{
+	display: none;
+}
+
+	.slicknav_nav a:hover,
+	.slicknav_nav .slicknav_row:hover{
+		background: none;
+		color: #aaa;
+		border-radius: 0;
+	}
+/* end slick menu*/
